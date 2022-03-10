@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.42;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 855px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.header {
+  padding: 30px 0px;
+}
+
+.header_container {
+  max-width: 1032px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__burger {
+  width: 30px;
+  height: 20px;
+  display: none;
+  align-items: center;
+}
+.header__burger-el {
+  height: 2px;
+  width: 100%;
+  background-color: #21243d;
+  position: relative;
+}
+.header__burger-el::before,
+.header__burger-el::after {
+  height: 2px;
+  width: 100%;
+  background-color: #21243d;
+  position: absolute;
+}
+
+.header__burger-el::before {
+  content: "";
+  top: -8px;
+}
+.header__burger-el::after {
+  content: "";
+  bottom: 8px;
+}
+.nav_list {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .header {
+    padding-top: 20px;
+  }
+  .nav {
+    display: none;
+  }
+  .header__burger {
+    display: flex;
+    margin-right: 18px;
+  }
+}
+
+.nav__item {
+  margin-left: 35px;
+}
+
+.about__container {
+  display: flex;
+}
+
+.about__info {
+  padding-right: 19%;
+}
+
+.button {
+  background-color: #ff6464;
+  color: white;
+  border-radius: 2px;
+  width: 208px;
+  height: 47px;
+  left: 140px;
+  top: 480px;
+  margin-top: 41px;
+}
+
+.about__title {
+  margin-bottom: 40px;
+}
+
+.about__avatar {
+  width: 243px;
+  height: 243px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about {
+  margin-top: 120px;
+}
+@media (max-width: 480px) {
+  .about__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .about__info {
+    padding: 0 24px;
+  }
+  .about__avatar {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.recent-posts {
+  background-color: #edf7fa;
+  padding: 27px 0px 32px;
+  color: #21243d;
+}
+
+.recent-posts__link {
+  color: #00a8cc;
+  text-decoration: underline;
+}
+
+.recent-posts__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.recent-posts__articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recent-posts__article {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 24px 21px 30px 23px;
+  margin-right: 2%;
+}
+
+.recent-posts__article:last-child {
+  margin-right: 0px;
+}
+
+.about {
+  padding-bottom: 5%;
+}
+
+.recent-posts__article-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.separator {
+  margin: 0px 26px;
+}
+
+.recent-posts__info {
+  margin: 17px 0px;
+}
+
+@media (max-width:480px){
+.recent-posts__top{
+ justify-content: center;
+}
+.recent-posts__link{
+    display: none;
+}
+.recent-posts__articles{
+    flex-direction: column;
+    padding: 0 5px;
+}
+.recent-posts__article{
+    margin-right: 0;
+    margin-bottom: 17px;
+}
+}
+.title__category {
+  color: #21243d;
+
+  padding: 27px 0px 32px;
+}
+
+.work__title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.work {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 31px;
+}
+
+.work__img-wrap {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.work__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work__info {
+  padding: 18px 28px 18px;
+}
+
+.work__category {
+  color: #8695a4;
+  width: 374px;
+  height: 34px;
+  left: 498px;
+  top: 1137px;
+  padding: 3px 16px 17px;
+}
+
+.work__date {
+  padding: 2px 5px;
+  background: #142850;
+  border-radius: 16px;
+  color: white;
+}
+
+.social__item {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.fb {
+  background-image: url(/img/icons/fb.png);
+}
+
+.insta {
+  background-image: url(/img/icons/insta.png);
+}
+.work__subtitle {
+  display: flex;
+}
+.link {
+  background-image: url(/img/icons/Linkedin.png);
+}
+.group {
+  background-image: url(/img/icons/Group.png);
+}
